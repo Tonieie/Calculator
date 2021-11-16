@@ -1,0 +1,305 @@
+Simulator report for Mem16x1
+Wed Nov 17 05:53:18 2021
+Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2008 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 2.0 us       ;
+; Simulation Netlist Size     ; 83 nodes     ;
+; Simulation Coverage         ;      12.05 % ;
+; Total Number of Transitions ; 430          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone III  ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
+; Interconnect Delay Model Type                                                              ; Transport  ; Transport     ;
+; Cell Delay Model Type                                                                      ; Transport  ; Transport     ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      12.05 % ;
+; Total nodes checked                                 ; 83           ;
+; Total output ports checked                          ; 83           ;
+; Total output ports with complete 1/0-value coverage ; 10           ;
+; Total output ports with no 1/0-value coverage       ; 60           ;
+; Total output ports with no 1-value coverage         ; 73           ;
+; Total output ports with no 0-value coverage         ; 60           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                ;
++--------------------+--------------------+------------------+
+; Node Name          ; Output Port Name   ; Output Port Type ;
++--------------------+--------------------+------------------+
+; |Mem16x1|Q[0]~reg0 ; |Mem16x1|Q[0]~reg0 ; regout           ;
+; |Mem16x1|Q[1]~reg0 ; |Mem16x1|Q[1]~reg0 ; regout           ;
+; |Mem16x1|Q[2]~reg0 ; |Mem16x1|Q[2]~reg0 ; regout           ;
+; |Mem16x1|Q[3]~reg0 ; |Mem16x1|Q[3]~reg0 ; regout           ;
+; |Mem16x1|clk       ; |Mem16x1|clk       ; out              ;
+; |Mem16x1|clear     ; |Mem16x1|clear     ; out              ;
+; |Mem16x1|Q[0]      ; |Mem16x1|Q[0]      ; pin_out          ;
+; |Mem16x1|Q[1]      ; |Mem16x1|Q[1]      ; pin_out          ;
+; |Mem16x1|Q[2]      ; |Mem16x1|Q[2]      ; pin_out          ;
+; |Mem16x1|Q[3]      ; |Mem16x1|Q[3]      ; pin_out          ;
++--------------------+--------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------+
+; Missing 1-Value Coverage                                     ;
++---------------------+---------------------+------------------+
+; Node Name           ; Output Port Name    ; Output Port Type ;
++---------------------+---------------------+------------------+
+; |Mem16x1|Q~0        ; |Mem16x1|Q~0        ; out              ;
+; |Mem16x1|Q~1        ; |Mem16x1|Q~1        ; out              ;
+; |Mem16x1|Q~2        ; |Mem16x1|Q~2        ; out              ;
+; |Mem16x1|Q~3        ; |Mem16x1|Q~3        ; out              ;
+; |Mem16x1|Q~4        ; |Mem16x1|Q~4        ; out              ;
+; |Mem16x1|Q~5        ; |Mem16x1|Q~5        ; out              ;
+; |Mem16x1|Q~6        ; |Mem16x1|Q~6        ; out              ;
+; |Mem16x1|Q~7        ; |Mem16x1|Q~7        ; out              ;
+; |Mem16x1|Q~8        ; |Mem16x1|Q~8        ; out              ;
+; |Mem16x1|Q~9        ; |Mem16x1|Q~9        ; out              ;
+; |Mem16x1|Q~10       ; |Mem16x1|Q~10       ; out              ;
+; |Mem16x1|Q~11       ; |Mem16x1|Q~11       ; out              ;
+; |Mem16x1|Q~12       ; |Mem16x1|Q~12       ; out              ;
+; |Mem16x1|Q~13       ; |Mem16x1|Q~13       ; out              ;
+; |Mem16x1|Q~14       ; |Mem16x1|Q~14       ; out              ;
+; |Mem16x1|Q~15       ; |Mem16x1|Q~15       ; out              ;
+; |Mem16x1|Q~16       ; |Mem16x1|Q~16       ; out              ;
+; |Mem16x1|Q~17       ; |Mem16x1|Q~17       ; out              ;
+; |Mem16x1|Q~18       ; |Mem16x1|Q~18       ; out              ;
+; |Mem16x1|Q~19       ; |Mem16x1|Q~19       ; out              ;
+; |Mem16x1|Q~20       ; |Mem16x1|Q~20       ; out              ;
+; |Mem16x1|Q~21       ; |Mem16x1|Q~21       ; out              ;
+; |Mem16x1|Q~22       ; |Mem16x1|Q~22       ; out              ;
+; |Mem16x1|Q~23       ; |Mem16x1|Q~23       ; out              ;
+; |Mem16x1|Q~24       ; |Mem16x1|Q~24       ; out              ;
+; |Mem16x1|Q~25       ; |Mem16x1|Q~25       ; out              ;
+; |Mem16x1|Q~26       ; |Mem16x1|Q~26       ; out              ;
+; |Mem16x1|Q~27       ; |Mem16x1|Q~27       ; out              ;
+; |Mem16x1|Q~28       ; |Mem16x1|Q~28       ; out              ;
+; |Mem16x1|Q~29       ; |Mem16x1|Q~29       ; out              ;
+; |Mem16x1|Q~30       ; |Mem16x1|Q~30       ; out              ;
+; |Mem16x1|Q~31       ; |Mem16x1|Q~31       ; out              ;
+; |Mem16x1|Q[4]~reg0  ; |Mem16x1|Q[4]~reg0  ; regout           ;
+; |Mem16x1|Q[5]~reg0  ; |Mem16x1|Q[5]~reg0  ; regout           ;
+; |Mem16x1|Q[6]~reg0  ; |Mem16x1|Q[6]~reg0  ; regout           ;
+; |Mem16x1|Q[7]~reg0  ; |Mem16x1|Q[7]~reg0  ; regout           ;
+; |Mem16x1|Q[8]~reg0  ; |Mem16x1|Q[8]~reg0  ; regout           ;
+; |Mem16x1|Q[9]~reg0  ; |Mem16x1|Q[9]~reg0  ; regout           ;
+; |Mem16x1|Q[10]~reg0 ; |Mem16x1|Q[10]~reg0 ; regout           ;
+; |Mem16x1|Q[11]~reg0 ; |Mem16x1|Q[11]~reg0 ; regout           ;
+; |Mem16x1|Q[12]~reg0 ; |Mem16x1|Q[12]~reg0 ; regout           ;
+; |Mem16x1|Q[13]~reg0 ; |Mem16x1|Q[13]~reg0 ; regout           ;
+; |Mem16x1|Q[14]~reg0 ; |Mem16x1|Q[14]~reg0 ; regout           ;
+; |Mem16x1|Q[15]~reg0 ; |Mem16x1|Q[15]~reg0 ; regout           ;
+; |Mem16x1|load       ; |Mem16x1|load       ; out              ;
+; |Mem16x1|D[0]       ; |Mem16x1|D[0]       ; out              ;
+; |Mem16x1|D[1]       ; |Mem16x1|D[1]       ; out              ;
+; |Mem16x1|D[2]       ; |Mem16x1|D[2]       ; out              ;
+; |Mem16x1|D[3]       ; |Mem16x1|D[3]       ; out              ;
+; |Mem16x1|D[4]       ; |Mem16x1|D[4]       ; out              ;
+; |Mem16x1|D[5]       ; |Mem16x1|D[5]       ; out              ;
+; |Mem16x1|D[6]       ; |Mem16x1|D[6]       ; out              ;
+; |Mem16x1|D[7]       ; |Mem16x1|D[7]       ; out              ;
+; |Mem16x1|D[8]       ; |Mem16x1|D[8]       ; out              ;
+; |Mem16x1|D[9]       ; |Mem16x1|D[9]       ; out              ;
+; |Mem16x1|D[10]      ; |Mem16x1|D[10]      ; out              ;
+; |Mem16x1|D[11]      ; |Mem16x1|D[11]      ; out              ;
+; |Mem16x1|D[12]      ; |Mem16x1|D[12]      ; out              ;
+; |Mem16x1|D[13]      ; |Mem16x1|D[13]      ; out              ;
+; |Mem16x1|D[14]      ; |Mem16x1|D[14]      ; out              ;
+; |Mem16x1|D[15]      ; |Mem16x1|D[15]      ; out              ;
+; |Mem16x1|Q[4]       ; |Mem16x1|Q[4]       ; pin_out          ;
+; |Mem16x1|Q[5]       ; |Mem16x1|Q[5]       ; pin_out          ;
+; |Mem16x1|Q[6]       ; |Mem16x1|Q[6]       ; pin_out          ;
+; |Mem16x1|Q[7]       ; |Mem16x1|Q[7]       ; pin_out          ;
+; |Mem16x1|Q[8]       ; |Mem16x1|Q[8]       ; pin_out          ;
+; |Mem16x1|Q[9]       ; |Mem16x1|Q[9]       ; pin_out          ;
+; |Mem16x1|Q[10]      ; |Mem16x1|Q[10]      ; pin_out          ;
+; |Mem16x1|Q[11]      ; |Mem16x1|Q[11]      ; pin_out          ;
+; |Mem16x1|Q[12]      ; |Mem16x1|Q[12]      ; pin_out          ;
+; |Mem16x1|Q[13]      ; |Mem16x1|Q[13]      ; pin_out          ;
+; |Mem16x1|Q[14]      ; |Mem16x1|Q[14]      ; pin_out          ;
+; |Mem16x1|Q[15]      ; |Mem16x1|Q[15]      ; pin_out          ;
++---------------------+---------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------+
+; Missing 0-Value Coverage                                     ;
++---------------------+---------------------+------------------+
+; Node Name           ; Output Port Name    ; Output Port Type ;
++---------------------+---------------------+------------------+
+; |Mem16x1|Q~0        ; |Mem16x1|Q~0        ; out              ;
+; |Mem16x1|Q~1        ; |Mem16x1|Q~1        ; out              ;
+; |Mem16x1|Q~2        ; |Mem16x1|Q~2        ; out              ;
+; |Mem16x1|Q~3        ; |Mem16x1|Q~3        ; out              ;
+; |Mem16x1|Q~4        ; |Mem16x1|Q~4        ; out              ;
+; |Mem16x1|Q~5        ; |Mem16x1|Q~5        ; out              ;
+; |Mem16x1|Q~6        ; |Mem16x1|Q~6        ; out              ;
+; |Mem16x1|Q~7        ; |Mem16x1|Q~7        ; out              ;
+; |Mem16x1|Q~8        ; |Mem16x1|Q~8        ; out              ;
+; |Mem16x1|Q~9        ; |Mem16x1|Q~9        ; out              ;
+; |Mem16x1|Q~10       ; |Mem16x1|Q~10       ; out              ;
+; |Mem16x1|Q~11       ; |Mem16x1|Q~11       ; out              ;
+; |Mem16x1|Q~16       ; |Mem16x1|Q~16       ; out              ;
+; |Mem16x1|Q~17       ; |Mem16x1|Q~17       ; out              ;
+; |Mem16x1|Q~18       ; |Mem16x1|Q~18       ; out              ;
+; |Mem16x1|Q~19       ; |Mem16x1|Q~19       ; out              ;
+; |Mem16x1|Q~20       ; |Mem16x1|Q~20       ; out              ;
+; |Mem16x1|Q~21       ; |Mem16x1|Q~21       ; out              ;
+; |Mem16x1|Q~22       ; |Mem16x1|Q~22       ; out              ;
+; |Mem16x1|Q~23       ; |Mem16x1|Q~23       ; out              ;
+; |Mem16x1|Q~24       ; |Mem16x1|Q~24       ; out              ;
+; |Mem16x1|Q~25       ; |Mem16x1|Q~25       ; out              ;
+; |Mem16x1|Q~26       ; |Mem16x1|Q~26       ; out              ;
+; |Mem16x1|Q~27       ; |Mem16x1|Q~27       ; out              ;
+; |Mem16x1|Q[4]~reg0  ; |Mem16x1|Q[4]~reg0  ; regout           ;
+; |Mem16x1|Q[5]~reg0  ; |Mem16x1|Q[5]~reg0  ; regout           ;
+; |Mem16x1|Q[6]~reg0  ; |Mem16x1|Q[6]~reg0  ; regout           ;
+; |Mem16x1|Q[7]~reg0  ; |Mem16x1|Q[7]~reg0  ; regout           ;
+; |Mem16x1|Q[8]~reg0  ; |Mem16x1|Q[8]~reg0  ; regout           ;
+; |Mem16x1|Q[9]~reg0  ; |Mem16x1|Q[9]~reg0  ; regout           ;
+; |Mem16x1|Q[10]~reg0 ; |Mem16x1|Q[10]~reg0 ; regout           ;
+; |Mem16x1|Q[11]~reg0 ; |Mem16x1|Q[11]~reg0 ; regout           ;
+; |Mem16x1|Q[12]~reg0 ; |Mem16x1|Q[12]~reg0 ; regout           ;
+; |Mem16x1|Q[13]~reg0 ; |Mem16x1|Q[13]~reg0 ; regout           ;
+; |Mem16x1|Q[14]~reg0 ; |Mem16x1|Q[14]~reg0 ; regout           ;
+; |Mem16x1|Q[15]~reg0 ; |Mem16x1|Q[15]~reg0 ; regout           ;
+; |Mem16x1|D[4]       ; |Mem16x1|D[4]       ; out              ;
+; |Mem16x1|D[5]       ; |Mem16x1|D[5]       ; out              ;
+; |Mem16x1|D[6]       ; |Mem16x1|D[6]       ; out              ;
+; |Mem16x1|D[7]       ; |Mem16x1|D[7]       ; out              ;
+; |Mem16x1|D[8]       ; |Mem16x1|D[8]       ; out              ;
+; |Mem16x1|D[9]       ; |Mem16x1|D[9]       ; out              ;
+; |Mem16x1|D[10]      ; |Mem16x1|D[10]      ; out              ;
+; |Mem16x1|D[11]      ; |Mem16x1|D[11]      ; out              ;
+; |Mem16x1|D[12]      ; |Mem16x1|D[12]      ; out              ;
+; |Mem16x1|D[13]      ; |Mem16x1|D[13]      ; out              ;
+; |Mem16x1|D[14]      ; |Mem16x1|D[14]      ; out              ;
+; |Mem16x1|D[15]      ; |Mem16x1|D[15]      ; out              ;
+; |Mem16x1|Q[4]       ; |Mem16x1|Q[4]       ; pin_out          ;
+; |Mem16x1|Q[5]       ; |Mem16x1|Q[5]       ; pin_out          ;
+; |Mem16x1|Q[6]       ; |Mem16x1|Q[6]       ; pin_out          ;
+; |Mem16x1|Q[7]       ; |Mem16x1|Q[7]       ; pin_out          ;
+; |Mem16x1|Q[8]       ; |Mem16x1|Q[8]       ; pin_out          ;
+; |Mem16x1|Q[9]       ; |Mem16x1|Q[9]       ; pin_out          ;
+; |Mem16x1|Q[10]      ; |Mem16x1|Q[10]      ; pin_out          ;
+; |Mem16x1|Q[11]      ; |Mem16x1|Q[11]      ; pin_out          ;
+; |Mem16x1|Q[12]      ; |Mem16x1|Q[12]      ; pin_out          ;
+; |Mem16x1|Q[13]      ; |Mem16x1|Q[13]      ; pin_out          ;
+; |Mem16x1|Q[14]      ; |Mem16x1|Q[14]      ; pin_out          ;
+; |Mem16x1|Q[15]      ; |Mem16x1|Q[15]      ; pin_out          ;
++---------------------+---------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
+    Info: Processing started: Wed Nov 17 05:53:18 2021
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off Mem16x1 -c Mem16x1
+Info: Using vector source file "E:/Tonie/Desktop/DigitalLab/Calculator/Mem16x1.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      12.05 %
+Info: Number of transitions in simulation is 430
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 151 megabytes
+    Info: Processing ended: Wed Nov 17 05:53:18 2021
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

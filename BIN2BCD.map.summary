@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Nov 17 05:37:45 2021
+Quartus II Version : 8.1 Build 163 10/28/2008 SJ Web Edition
+Revision Name : BIN2BCD
+Top-level Entity Name : BIN2BCD
+Family : Cyclone III
+Total logic elements : 1,718
+    Total combinational functions : 1,718
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 37
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="BIN2BCD">
+		<CBX_INST_ENTRY INSTANCE_NAME="|BIN2BCD|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_phm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|BIN2BCD|lpm_divide:Div2" CBX_FILE_NAME="lpm_divide_6jm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|BIN2BCD|lpm_divide:Mod1" CBX_FILE_NAME="lpm_divide_fbm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|BIN2BCD|lpm_divide:Mod3" CBX_FILE_NAME="lpm_divide_fbm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|BIN2BCD|lpm_divide:Div1" CBX_FILE_NAME="lpm_divide_shm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|BIN2BCD|lpm_divide:Div3" CBX_FILE_NAME="lpm_divide_ajm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|BIN2BCD|lpm_divide:Mod0" CBX_FILE_NAME="lpm_divide_fbm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|BIN2BCD|lpm_divide:Mod2" CBX_FILE_NAME="lpm_divide_fbm.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

@@ -1,0 +1,16 @@
+Fitter Status : Successful - Wed Nov 17 01:12:56 2021
+Quartus II Version : 8.1 Build 163 10/28/2008 SJ Web Edition
+Revision Name : SpecialShift4X4Bit
+Top-level Entity Name : SpecialShift4X4Bit
+Family : Cyclone III
+Device : EP3C10E144C8
+Timing Models : Final
+Total logic elements : 17 / 10,320 ( < 1 % )
+    Total combinational functions : 17 / 10,320 ( < 1 % )
+    Dedicated logic registers : 16 / 10,320 ( < 1 % )
+Total registers : 16
+Total pins : 23 / 95 ( 24 % )
+Total virtual pins : 0
+Total memory bits : 0 / 423,936 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 46 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )

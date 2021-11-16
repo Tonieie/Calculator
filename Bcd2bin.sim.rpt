@@ -1,0 +1,502 @@
+Simulator report for Bcd2bin
+Wed Nov 17 03:43:29 2021
+Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2008 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 2.0 us       ;
+; Simulation Netlist Size     ; 204 nodes    ;
+; Simulation Coverage         ;       5.88 % ;
+; Total Number of Transitions ; 94           ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone III  ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
+; Interconnect Delay Model Type                                                              ; Transport  ; Transport     ;
+; Cell Delay Model Type                                                                      ; Transport  ; Transport     ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;       5.88 % ;
+; Total nodes checked                                 ; 204          ;
+; Total output ports checked                          ; 204          ;
+; Total output ports with complete 1/0-value coverage ; 12           ;
+; Total output ports with no 1/0-value coverage       ; 136          ;
+; Total output ports with no 1-value coverage         ; 192          ;
+; Total output ports with no 0-value coverage         ; 136          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                      ;
++-----------------------+-----------------------+------------------+
+; Node Name             ; Output Port Name      ; Output Port Type ;
++-----------------------+-----------------------+------------------+
+; |Bcd2bin|BinaryOut[5] ; |Bcd2bin|BinaryOut[5] ; pin_out          ;
+; |Bcd2bin|BinaryOut[8] ; |Bcd2bin|BinaryOut[8] ; pin_out          ;
+; |Bcd2bin|BinaryOut[9] ; |Bcd2bin|BinaryOut[9] ; pin_out          ;
+; |Bcd2bin|Add0~107     ; |Bcd2bin|Add0~107     ; out0             ;
+; |Bcd2bin|Add0~112     ; |Bcd2bin|Add0~112     ; out0             ;
+; |Bcd2bin|Add2~77      ; |Bcd2bin|Add2~77      ; out0             ;
+; |Bcd2bin|Add2~97      ; |Bcd2bin|Add2~97      ; out0             ;
+; |Bcd2bin|Add2~99      ; |Bcd2bin|Add2~99      ; out0             ;
+; |Bcd2bin|Add3~88      ; |Bcd2bin|Add3~88      ; out0             ;
+; |Bcd2bin|Add3~89      ; |Bcd2bin|Add3~89      ; out0             ;
+; |Bcd2bin|Add3~95      ; |Bcd2bin|Add3~95      ; out0             ;
+; |Bcd2bin|Add3~97      ; |Bcd2bin|Add3~97      ; out0             ;
++-----------------------+-----------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                               ;
++----------------------------------------------------------+----------------------------------------------------------+------------------+
+; Node Name                                                ; Output Port Name                                         ; Output Port Type ;
++----------------------------------------------------------+----------------------------------------------------------+------------------+
+; |Bcd2bin|BCD3[0]                                         ; |Bcd2bin|BCD3[0]                                         ; out              ;
+; |Bcd2bin|BCD3[1]                                         ; |Bcd2bin|BCD3[1]                                         ; out              ;
+; |Bcd2bin|BCD3[2]                                         ; |Bcd2bin|BCD3[2]                                         ; out              ;
+; |Bcd2bin|BCD3[3]                                         ; |Bcd2bin|BCD3[3]                                         ; out              ;
+; |Bcd2bin|BCD2[0]                                         ; |Bcd2bin|BCD2[0]                                         ; out              ;
+; |Bcd2bin|BCD2[1]                                         ; |Bcd2bin|BCD2[1]                                         ; out              ;
+; |Bcd2bin|BCD2[2]                                         ; |Bcd2bin|BCD2[2]                                         ; out              ;
+; |Bcd2bin|BCD2[3]                                         ; |Bcd2bin|BCD2[3]                                         ; out              ;
+; |Bcd2bin|BCD1[0]                                         ; |Bcd2bin|BCD1[0]                                         ; out              ;
+; |Bcd2bin|BCD1[1]                                         ; |Bcd2bin|BCD1[1]                                         ; out              ;
+; |Bcd2bin|BCD1[2]                                         ; |Bcd2bin|BCD1[2]                                         ; out              ;
+; |Bcd2bin|BCD1[3]                                         ; |Bcd2bin|BCD1[3]                                         ; out              ;
+; |Bcd2bin|BCD0[0]                                         ; |Bcd2bin|BCD0[0]                                         ; out              ;
+; |Bcd2bin|BCD0[1]                                         ; |Bcd2bin|BCD0[1]                                         ; out              ;
+; |Bcd2bin|BCD0[2]                                         ; |Bcd2bin|BCD0[2]                                         ; out              ;
+; |Bcd2bin|BCD0[3]                                         ; |Bcd2bin|BCD0[3]                                         ; out              ;
+; |Bcd2bin|BinaryOut[0]                                    ; |Bcd2bin|BinaryOut[0]                                    ; pin_out          ;
+; |Bcd2bin|BinaryOut[1]                                    ; |Bcd2bin|BinaryOut[1]                                    ; pin_out          ;
+; |Bcd2bin|BinaryOut[2]                                    ; |Bcd2bin|BinaryOut[2]                                    ; pin_out          ;
+; |Bcd2bin|BinaryOut[3]                                    ; |Bcd2bin|BinaryOut[3]                                    ; pin_out          ;
+; |Bcd2bin|BinaryOut[4]                                    ; |Bcd2bin|BinaryOut[4]                                    ; pin_out          ;
+; |Bcd2bin|BinaryOut[6]                                    ; |Bcd2bin|BinaryOut[6]                                    ; pin_out          ;
+; |Bcd2bin|BinaryOut[7]                                    ; |Bcd2bin|BinaryOut[7]                                    ; pin_out          ;
+; |Bcd2bin|BinaryOut[10]                                   ; |Bcd2bin|BinaryOut[10]                                   ; pin_out          ;
+; |Bcd2bin|BinaryOut[11]                                   ; |Bcd2bin|BinaryOut[11]                                   ; pin_out          ;
+; |Bcd2bin|BinaryOut[12]                                   ; |Bcd2bin|BinaryOut[12]                                   ; pin_out          ;
+; |Bcd2bin|BinaryOut[13]                                   ; |Bcd2bin|BinaryOut[13]                                   ; pin_out          ;
+; |Bcd2bin|BinaryOut[14]                                   ; |Bcd2bin|BinaryOut[14]                                   ; pin_out          ;
+; |Bcd2bin|BinaryOut[15]                                   ; |Bcd2bin|BinaryOut[15]                                   ; pin_out          ;
+; |Bcd2bin|Add0~82                                         ; |Bcd2bin|Add0~82                                         ; out0             ;
+; |Bcd2bin|Add0~85                                         ; |Bcd2bin|Add0~85                                         ; out0             ;
+; |Bcd2bin|Add0~87                                         ; |Bcd2bin|Add0~87                                         ; out0             ;
+; |Bcd2bin|Add0~88                                         ; |Bcd2bin|Add0~88                                         ; out0             ;
+; |Bcd2bin|Add0~89                                         ; |Bcd2bin|Add0~89                                         ; out0             ;
+; |Bcd2bin|Add0~90                                         ; |Bcd2bin|Add0~90                                         ; out0             ;
+; |Bcd2bin|Add0~91                                         ; |Bcd2bin|Add0~91                                         ; out0             ;
+; |Bcd2bin|Add0~92                                         ; |Bcd2bin|Add0~92                                         ; out0             ;
+; |Bcd2bin|Add0~93                                         ; |Bcd2bin|Add0~93                                         ; out0             ;
+; |Bcd2bin|Add0~94                                         ; |Bcd2bin|Add0~94                                         ; out0             ;
+; |Bcd2bin|Add0~95                                         ; |Bcd2bin|Add0~95                                         ; out0             ;
+; |Bcd2bin|Add0~96                                         ; |Bcd2bin|Add0~96                                         ; out0             ;
+; |Bcd2bin|Add0~97                                         ; |Bcd2bin|Add0~97                                         ; out0             ;
+; |Bcd2bin|Add0~98                                         ; |Bcd2bin|Add0~98                                         ; out0             ;
+; |Bcd2bin|Add0~99                                         ; |Bcd2bin|Add0~99                                         ; out0             ;
+; |Bcd2bin|Add0~100                                        ; |Bcd2bin|Add0~100                                        ; out0             ;
+; |Bcd2bin|Add0~101                                        ; |Bcd2bin|Add0~101                                        ; out0             ;
+; |Bcd2bin|Add0~102                                        ; |Bcd2bin|Add0~102                                        ; out0             ;
+; |Bcd2bin|Add0~103                                        ; |Bcd2bin|Add0~103                                        ; out0             ;
+; |Bcd2bin|Add0~104                                        ; |Bcd2bin|Add0~104                                        ; out0             ;
+; |Bcd2bin|Add0~105                                        ; |Bcd2bin|Add0~105                                        ; out0             ;
+; |Bcd2bin|Add0~106                                        ; |Bcd2bin|Add0~106                                        ; out0             ;
+; |Bcd2bin|Add0~108                                        ; |Bcd2bin|Add0~108                                        ; out0             ;
+; |Bcd2bin|Add0~109                                        ; |Bcd2bin|Add0~109                                        ; out0             ;
+; |Bcd2bin|Add0~110                                        ; |Bcd2bin|Add0~110                                        ; out0             ;
+; |Bcd2bin|Add0~111                                        ; |Bcd2bin|Add0~111                                        ; out0             ;
+; |Bcd2bin|Add0~113                                        ; |Bcd2bin|Add0~113                                        ; out0             ;
+; |Bcd2bin|Add0~114                                        ; |Bcd2bin|Add0~114                                        ; out0             ;
+; |Bcd2bin|Add0~115                                        ; |Bcd2bin|Add0~115                                        ; out0             ;
+; |Bcd2bin|Add0~116                                        ; |Bcd2bin|Add0~116                                        ; out0             ;
+; |Bcd2bin|Add0~117                                        ; |Bcd2bin|Add0~117                                        ; out0             ;
+; |Bcd2bin|Add0~118                                        ; |Bcd2bin|Add0~118                                        ; out0             ;
+; |Bcd2bin|Add0~119                                        ; |Bcd2bin|Add0~119                                        ; out0             ;
+; |Bcd2bin|Add0~120                                        ; |Bcd2bin|Add0~120                                        ; out0             ;
+; |Bcd2bin|Add0~121                                        ; |Bcd2bin|Add0~121                                        ; out0             ;
+; |Bcd2bin|Add0~122                                        ; |Bcd2bin|Add0~122                                        ; out0             ;
+; |Bcd2bin|Add0~123                                        ; |Bcd2bin|Add0~123                                        ; out0             ;
+; |Bcd2bin|Add0~124                                        ; |Bcd2bin|Add0~124                                        ; out0             ;
+; |Bcd2bin|Add0~125                                        ; |Bcd2bin|Add0~125                                        ; out0             ;
+; |Bcd2bin|Add0~126                                        ; |Bcd2bin|Add0~126                                        ; out0             ;
+; |Bcd2bin|Add1~25                                         ; |Bcd2bin|Add1~25                                         ; out0             ;
+; |Bcd2bin|Add1~26                                         ; |Bcd2bin|Add1~26                                         ; out0             ;
+; |Bcd2bin|Add1~27                                         ; |Bcd2bin|Add1~27                                         ; out0             ;
+; |Bcd2bin|Add1~28                                         ; |Bcd2bin|Add1~28                                         ; out0             ;
+; |Bcd2bin|Add1~29                                         ; |Bcd2bin|Add1~29                                         ; out0             ;
+; |Bcd2bin|Add1~30                                         ; |Bcd2bin|Add1~30                                         ; out0             ;
+; |Bcd2bin|Add1~31                                         ; |Bcd2bin|Add1~31                                         ; out0             ;
+; |Bcd2bin|Add1~32                                         ; |Bcd2bin|Add1~32                                         ; out0             ;
+; |Bcd2bin|Add1~33                                         ; |Bcd2bin|Add1~33                                         ; out0             ;
+; |Bcd2bin|Add1~34                                         ; |Bcd2bin|Add1~34                                         ; out0             ;
+; |Bcd2bin|Add1~35                                         ; |Bcd2bin|Add1~35                                         ; out0             ;
+; |Bcd2bin|Add2~67                                         ; |Bcd2bin|Add2~67                                         ; out0             ;
+; |Bcd2bin|Add2~70                                         ; |Bcd2bin|Add2~70                                         ; out0             ;
+; |Bcd2bin|Add2~72                                         ; |Bcd2bin|Add2~72                                         ; out0             ;
+; |Bcd2bin|Add2~73                                         ; |Bcd2bin|Add2~73                                         ; out0             ;
+; |Bcd2bin|Add2~74                                         ; |Bcd2bin|Add2~74                                         ; out0             ;
+; |Bcd2bin|Add2~75                                         ; |Bcd2bin|Add2~75                                         ; out0             ;
+; |Bcd2bin|Add2~76                                         ; |Bcd2bin|Add2~76                                         ; out0             ;
+; |Bcd2bin|Add2~78                                         ; |Bcd2bin|Add2~78                                         ; out0             ;
+; |Bcd2bin|Add2~79                                         ; |Bcd2bin|Add2~79                                         ; out0             ;
+; |Bcd2bin|Add2~80                                         ; |Bcd2bin|Add2~80                                         ; out0             ;
+; |Bcd2bin|Add2~81                                         ; |Bcd2bin|Add2~81                                         ; out0             ;
+; |Bcd2bin|Add2~82                                         ; |Bcd2bin|Add2~82                                         ; out0             ;
+; |Bcd2bin|Add2~83                                         ; |Bcd2bin|Add2~83                                         ; out0             ;
+; |Bcd2bin|Add2~84                                         ; |Bcd2bin|Add2~84                                         ; out0             ;
+; |Bcd2bin|Add2~85                                         ; |Bcd2bin|Add2~85                                         ; out0             ;
+; |Bcd2bin|Add2~86                                         ; |Bcd2bin|Add2~86                                         ; out0             ;
+; |Bcd2bin|Add2~87                                         ; |Bcd2bin|Add2~87                                         ; out0             ;
+; |Bcd2bin|Add2~88                                         ; |Bcd2bin|Add2~88                                         ; out0             ;
+; |Bcd2bin|Add2~89                                         ; |Bcd2bin|Add2~89                                         ; out0             ;
+; |Bcd2bin|Add2~90                                         ; |Bcd2bin|Add2~90                                         ; out0             ;
+; |Bcd2bin|Add2~91                                         ; |Bcd2bin|Add2~91                                         ; out0             ;
+; |Bcd2bin|Add2~92                                         ; |Bcd2bin|Add2~92                                         ; out0             ;
+; |Bcd2bin|Add2~93                                         ; |Bcd2bin|Add2~93                                         ; out0             ;
+; |Bcd2bin|Add2~94                                         ; |Bcd2bin|Add2~94                                         ; out0             ;
+; |Bcd2bin|Add2~95                                         ; |Bcd2bin|Add2~95                                         ; out0             ;
+; |Bcd2bin|Add2~96                                         ; |Bcd2bin|Add2~96                                         ; out0             ;
+; |Bcd2bin|Add2~98                                         ; |Bcd2bin|Add2~98                                         ; out0             ;
+; |Bcd2bin|Add2~100                                        ; |Bcd2bin|Add2~100                                        ; out0             ;
+; |Bcd2bin|Add2~101                                        ; |Bcd2bin|Add2~101                                        ; out0             ;
+; |Bcd2bin|Add2~102                                        ; |Bcd2bin|Add2~102                                        ; out0             ;
+; |Bcd2bin|Add2~103                                        ; |Bcd2bin|Add2~103                                        ; out0             ;
+; |Bcd2bin|Add2~104                                        ; |Bcd2bin|Add2~104                                        ; out0             ;
+; |Bcd2bin|Add2~105                                        ; |Bcd2bin|Add2~105                                        ; out0             ;
+; |Bcd2bin|Add2~106                                        ; |Bcd2bin|Add2~106                                        ; out0             ;
+; |Bcd2bin|Add2~107                                        ; |Bcd2bin|Add2~107                                        ; out0             ;
+; |Bcd2bin|Add3~72                                         ; |Bcd2bin|Add3~72                                         ; out0             ;
+; |Bcd2bin|Add3~75                                         ; |Bcd2bin|Add3~75                                         ; out0             ;
+; |Bcd2bin|Add3~77                                         ; |Bcd2bin|Add3~77                                         ; out0             ;
+; |Bcd2bin|Add3~78                                         ; |Bcd2bin|Add3~78                                         ; out0             ;
+; |Bcd2bin|Add3~79                                         ; |Bcd2bin|Add3~79                                         ; out0             ;
+; |Bcd2bin|Add3~80                                         ; |Bcd2bin|Add3~80                                         ; out0             ;
+; |Bcd2bin|Add3~81                                         ; |Bcd2bin|Add3~81                                         ; out0             ;
+; |Bcd2bin|Add3~82                                         ; |Bcd2bin|Add3~82                                         ; out0             ;
+; |Bcd2bin|Add3~83                                         ; |Bcd2bin|Add3~83                                         ; out0             ;
+; |Bcd2bin|Add3~84                                         ; |Bcd2bin|Add3~84                                         ; out0             ;
+; |Bcd2bin|Add3~85                                         ; |Bcd2bin|Add3~85                                         ; out0             ;
+; |Bcd2bin|Add3~86                                         ; |Bcd2bin|Add3~86                                         ; out0             ;
+; |Bcd2bin|Add3~87                                         ; |Bcd2bin|Add3~87                                         ; out0             ;
+; |Bcd2bin|Add3~90                                         ; |Bcd2bin|Add3~90                                         ; out0             ;
+; |Bcd2bin|Add3~91                                         ; |Bcd2bin|Add3~91                                         ; out0             ;
+; |Bcd2bin|Add3~92                                         ; |Bcd2bin|Add3~92                                         ; out0             ;
+; |Bcd2bin|Add3~93                                         ; |Bcd2bin|Add3~93                                         ; out0             ;
+; |Bcd2bin|Add3~94                                         ; |Bcd2bin|Add3~94                                         ; out0             ;
+; |Bcd2bin|Add3~96                                         ; |Bcd2bin|Add3~96                                         ; out0             ;
+; |Bcd2bin|Add3~98                                         ; |Bcd2bin|Add3~98                                         ; out0             ;
+; |Bcd2bin|Add3~99                                         ; |Bcd2bin|Add3~99                                         ; out0             ;
+; |Bcd2bin|Add3~100                                        ; |Bcd2bin|Add3~100                                        ; out0             ;
+; |Bcd2bin|Add3~101                                        ; |Bcd2bin|Add3~101                                        ; out0             ;
+; |Bcd2bin|Add3~102                                        ; |Bcd2bin|Add3~102                                        ; out0             ;
+; |Bcd2bin|Add3~103                                        ; |Bcd2bin|Add3~103                                        ; out0             ;
+; |Bcd2bin|Add3~104                                        ; |Bcd2bin|Add3~104                                        ; out0             ;
+; |Bcd2bin|Add3~105                                        ; |Bcd2bin|Add3~105                                        ; out0             ;
+; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|_~6           ; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|_~6           ; out0             ;
+; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|romout[0][10] ; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|romout[0][10] ; out0             ;
+; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|romout[0][9]  ; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|romout[0][9]  ; out0             ;
+; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|romout[0][8]  ; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|romout[0][8]  ; out0             ;
+; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|romout[0][7]  ; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|romout[0][7]  ; out0             ;
+; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|romout[0][6]  ; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|romout[0][6]  ; out0             ;
+; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|romout[0][5]  ; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|romout[0][5]  ; out0             ;
+; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|romout[0][4]  ; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|romout[0][4]  ; out0             ;
+; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|romout[0][3]  ; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|romout[0][3]  ; out0             ;
+; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|romout[0][2]  ; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|romout[0][2]  ; out0             ;
+; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|_~10          ; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|_~10          ; out0             ;
+; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|_~14          ; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|_~14          ; out0             ;
+; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|_~17          ; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|_~17          ; out0             ;
+; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|_~21          ; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|_~21          ; out0             ;
+; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|_~24          ; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|_~24          ; out0             ;
+; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|_~27          ; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|_~27          ; out0             ;
+; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|_~29          ; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|_~29          ; out0             ;
+; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|_~33          ; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|_~33          ; out0             ;
+; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|_~36          ; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|_~36          ; out0             ;
+; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|_~39          ; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|_~39          ; out0             ;
+; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|_~41          ; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|_~41          ; out0             ;
+; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|_~44          ; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|_~44          ; out0             ;
+; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|_~46          ; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|_~46          ; out0             ;
+; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|_~48          ; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|_~48          ; out0             ;
+; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|_~6           ; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|_~6           ; out0             ;
+; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|romout[0][13] ; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|romout[0][13] ; out0             ;
+; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|romout[0][12] ; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|romout[0][12] ; out0             ;
+; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|romout[0][11] ; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|romout[0][11] ; out0             ;
+; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|romout[0][10] ; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|romout[0][10] ; out0             ;
+; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|romout[0][9]  ; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|romout[0][9]  ; out0             ;
+; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|romout[0][8]  ; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|romout[0][8]  ; out0             ;
+; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|romout[0][7]  ; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|romout[0][7]  ; out0             ;
+; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|romout[0][6]  ; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|romout[0][6]  ; out0             ;
+; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|romout[0][5]  ; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|romout[0][5]  ; out0             ;
+; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|romout[0][4]  ; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|romout[0][4]  ; out0             ;
+; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|romout[0][3]  ; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|romout[0][3]  ; out0             ;
+; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|_~10          ; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|_~10          ; out0             ;
+; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|_~14          ; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|_~14          ; out0             ;
+; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|_~17          ; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|_~17          ; out0             ;
+; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|_~21          ; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|_~21          ; out0             ;
+; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|_~24          ; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|_~24          ; out0             ;
+; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|_~27          ; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|_~27          ; out0             ;
+; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|_~29          ; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|_~29          ; out0             ;
+; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|_~33          ; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|_~33          ; out0             ;
+; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|_~36          ; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|_~36          ; out0             ;
+; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|_~39          ; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|_~39          ; out0             ;
+; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|_~41          ; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|_~41          ; out0             ;
+; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|_~44          ; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|_~44          ; out0             ;
+; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|_~46          ; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|_~46          ; out0             ;
+; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|_~48          ; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|_~48          ; out0             ;
++----------------------------------------------------------+----------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                               ;
++----------------------------------------------------------+----------------------------------------------------------+------------------+
+; Node Name                                                ; Output Port Name                                         ; Output Port Type ;
++----------------------------------------------------------+----------------------------------------------------------+------------------+
+; |Bcd2bin|BCD3[1]                                         ; |Bcd2bin|BCD3[1]                                         ; out              ;
+; |Bcd2bin|BCD3[2]                                         ; |Bcd2bin|BCD3[2]                                         ; out              ;
+; |Bcd2bin|BCD3[3]                                         ; |Bcd2bin|BCD3[3]                                         ; out              ;
+; |Bcd2bin|BCD2[0]                                         ; |Bcd2bin|BCD2[0]                                         ; out              ;
+; |Bcd2bin|BCD2[2]                                         ; |Bcd2bin|BCD2[2]                                         ; out              ;
+; |Bcd2bin|BCD2[3]                                         ; |Bcd2bin|BCD2[3]                                         ; out              ;
+; |Bcd2bin|BCD1[2]                                         ; |Bcd2bin|BCD1[2]                                         ; out              ;
+; |Bcd2bin|BCD1[3]                                         ; |Bcd2bin|BCD1[3]                                         ; out              ;
+; |Bcd2bin|BCD0[0]                                         ; |Bcd2bin|BCD0[0]                                         ; out              ;
+; |Bcd2bin|BCD0[1]                                         ; |Bcd2bin|BCD0[1]                                         ; out              ;
+; |Bcd2bin|BCD0[3]                                         ; |Bcd2bin|BCD0[3]                                         ; out              ;
+; |Bcd2bin|BinaryOut[0]                                    ; |Bcd2bin|BinaryOut[0]                                    ; pin_out          ;
+; |Bcd2bin|BinaryOut[2]                                    ; |Bcd2bin|BinaryOut[2]                                    ; pin_out          ;
+; |Bcd2bin|BinaryOut[3]                                    ; |Bcd2bin|BinaryOut[3]                                    ; pin_out          ;
+; |Bcd2bin|BinaryOut[11]                                   ; |Bcd2bin|BinaryOut[11]                                   ; pin_out          ;
+; |Bcd2bin|BinaryOut[12]                                   ; |Bcd2bin|BinaryOut[12]                                   ; pin_out          ;
+; |Bcd2bin|BinaryOut[13]                                   ; |Bcd2bin|BinaryOut[13]                                   ; pin_out          ;
+; |Bcd2bin|BinaryOut[14]                                   ; |Bcd2bin|BinaryOut[14]                                   ; pin_out          ;
+; |Bcd2bin|BinaryOut[15]                                   ; |Bcd2bin|BinaryOut[15]                                   ; pin_out          ;
+; |Bcd2bin|Add0~82                                         ; |Bcd2bin|Add0~82                                         ; out0             ;
+; |Bcd2bin|Add0~88                                         ; |Bcd2bin|Add0~88                                         ; out0             ;
+; |Bcd2bin|Add0~89                                         ; |Bcd2bin|Add0~89                                         ; out0             ;
+; |Bcd2bin|Add0~90                                         ; |Bcd2bin|Add0~90                                         ; out0             ;
+; |Bcd2bin|Add0~91                                         ; |Bcd2bin|Add0~91                                         ; out0             ;
+; |Bcd2bin|Add0~93                                         ; |Bcd2bin|Add0~93                                         ; out0             ;
+; |Bcd2bin|Add0~94                                         ; |Bcd2bin|Add0~94                                         ; out0             ;
+; |Bcd2bin|Add0~95                                         ; |Bcd2bin|Add0~95                                         ; out0             ;
+; |Bcd2bin|Add0~96                                         ; |Bcd2bin|Add0~96                                         ; out0             ;
+; |Bcd2bin|Add0~97                                         ; |Bcd2bin|Add0~97                                         ; out0             ;
+; |Bcd2bin|Add0~99                                         ; |Bcd2bin|Add0~99                                         ; out0             ;
+; |Bcd2bin|Add0~101                                        ; |Bcd2bin|Add0~101                                        ; out0             ;
+; |Bcd2bin|Add0~110                                        ; |Bcd2bin|Add0~110                                        ; out0             ;
+; |Bcd2bin|Add0~111                                        ; |Bcd2bin|Add0~111                                        ; out0             ;
+; |Bcd2bin|Add0~115                                        ; |Bcd2bin|Add0~115                                        ; out0             ;
+; |Bcd2bin|Add0~116                                        ; |Bcd2bin|Add0~116                                        ; out0             ;
+; |Bcd2bin|Add0~118                                        ; |Bcd2bin|Add0~118                                        ; out0             ;
+; |Bcd2bin|Add0~119                                        ; |Bcd2bin|Add0~119                                        ; out0             ;
+; |Bcd2bin|Add0~120                                        ; |Bcd2bin|Add0~120                                        ; out0             ;
+; |Bcd2bin|Add0~121                                        ; |Bcd2bin|Add0~121                                        ; out0             ;
+; |Bcd2bin|Add0~122                                        ; |Bcd2bin|Add0~122                                        ; out0             ;
+; |Bcd2bin|Add0~123                                        ; |Bcd2bin|Add0~123                                        ; out0             ;
+; |Bcd2bin|Add0~124                                        ; |Bcd2bin|Add0~124                                        ; out0             ;
+; |Bcd2bin|Add0~125                                        ; |Bcd2bin|Add0~125                                        ; out0             ;
+; |Bcd2bin|Add0~126                                        ; |Bcd2bin|Add0~126                                        ; out0             ;
+; |Bcd2bin|Add1~26                                         ; |Bcd2bin|Add1~26                                         ; out0             ;
+; |Bcd2bin|Add1~28                                         ; |Bcd2bin|Add1~28                                         ; out0             ;
+; |Bcd2bin|Add1~29                                         ; |Bcd2bin|Add1~29                                         ; out0             ;
+; |Bcd2bin|Add1~30                                         ; |Bcd2bin|Add1~30                                         ; out0             ;
+; |Bcd2bin|Add1~31                                         ; |Bcd2bin|Add1~31                                         ; out0             ;
+; |Bcd2bin|Add1~32                                         ; |Bcd2bin|Add1~32                                         ; out0             ;
+; |Bcd2bin|Add1~33                                         ; |Bcd2bin|Add1~33                                         ; out0             ;
+; |Bcd2bin|Add1~34                                         ; |Bcd2bin|Add1~34                                         ; out0             ;
+; |Bcd2bin|Add1~35                                         ; |Bcd2bin|Add1~35                                         ; out0             ;
+; |Bcd2bin|Add2~70                                         ; |Bcd2bin|Add2~70                                         ; out0             ;
+; |Bcd2bin|Add2~73                                         ; |Bcd2bin|Add2~73                                         ; out0             ;
+; |Bcd2bin|Add2~74                                         ; |Bcd2bin|Add2~74                                         ; out0             ;
+; |Bcd2bin|Add2~75                                         ; |Bcd2bin|Add2~75                                         ; out0             ;
+; |Bcd2bin|Add2~76                                         ; |Bcd2bin|Add2~76                                         ; out0             ;
+; |Bcd2bin|Add2~79                                         ; |Bcd2bin|Add2~79                                         ; out0             ;
+; |Bcd2bin|Add2~81                                         ; |Bcd2bin|Add2~81                                         ; out0             ;
+; |Bcd2bin|Add2~82                                         ; |Bcd2bin|Add2~82                                         ; out0             ;
+; |Bcd2bin|Add2~85                                         ; |Bcd2bin|Add2~85                                         ; out0             ;
+; |Bcd2bin|Add2~86                                         ; |Bcd2bin|Add2~86                                         ; out0             ;
+; |Bcd2bin|Add2~88                                         ; |Bcd2bin|Add2~88                                         ; out0             ;
+; |Bcd2bin|Add2~89                                         ; |Bcd2bin|Add2~89                                         ; out0             ;
+; |Bcd2bin|Add2~90                                         ; |Bcd2bin|Add2~90                                         ; out0             ;
+; |Bcd2bin|Add2~91                                         ; |Bcd2bin|Add2~91                                         ; out0             ;
+; |Bcd2bin|Add2~93                                         ; |Bcd2bin|Add2~93                                         ; out0             ;
+; |Bcd2bin|Add2~94                                         ; |Bcd2bin|Add2~94                                         ; out0             ;
+; |Bcd2bin|Add2~95                                         ; |Bcd2bin|Add2~95                                         ; out0             ;
+; |Bcd2bin|Add2~96                                         ; |Bcd2bin|Add2~96                                         ; out0             ;
+; |Bcd2bin|Add2~98                                         ; |Bcd2bin|Add2~98                                         ; out0             ;
+; |Bcd2bin|Add2~100                                        ; |Bcd2bin|Add2~100                                        ; out0             ;
+; |Bcd2bin|Add2~102                                        ; |Bcd2bin|Add2~102                                        ; out0             ;
+; |Bcd2bin|Add2~103                                        ; |Bcd2bin|Add2~103                                        ; out0             ;
+; |Bcd2bin|Add2~104                                        ; |Bcd2bin|Add2~104                                        ; out0             ;
+; |Bcd2bin|Add2~105                                        ; |Bcd2bin|Add2~105                                        ; out0             ;
+; |Bcd2bin|Add2~106                                        ; |Bcd2bin|Add2~106                                        ; out0             ;
+; |Bcd2bin|Add2~107                                        ; |Bcd2bin|Add2~107                                        ; out0             ;
+; |Bcd2bin|Add3~75                                         ; |Bcd2bin|Add3~75                                         ; out0             ;
+; |Bcd2bin|Add3~77                                         ; |Bcd2bin|Add3~77                                         ; out0             ;
+; |Bcd2bin|Add3~79                                         ; |Bcd2bin|Add3~79                                         ; out0             ;
+; |Bcd2bin|Add3~81                                         ; |Bcd2bin|Add3~81                                         ; out0             ;
+; |Bcd2bin|Add3~82                                         ; |Bcd2bin|Add3~82                                         ; out0             ;
+; |Bcd2bin|Add3~85                                         ; |Bcd2bin|Add3~85                                         ; out0             ;
+; |Bcd2bin|Add3~86                                         ; |Bcd2bin|Add3~86                                         ; out0             ;
+; |Bcd2bin|Add3~90                                         ; |Bcd2bin|Add3~90                                         ; out0             ;
+; |Bcd2bin|Add3~92                                         ; |Bcd2bin|Add3~92                                         ; out0             ;
+; |Bcd2bin|Add3~94                                         ; |Bcd2bin|Add3~94                                         ; out0             ;
+; |Bcd2bin|Add3~96                                         ; |Bcd2bin|Add3~96                                         ; out0             ;
+; |Bcd2bin|Add3~98                                         ; |Bcd2bin|Add3~98                                         ; out0             ;
+; |Bcd2bin|Add3~100                                        ; |Bcd2bin|Add3~100                                        ; out0             ;
+; |Bcd2bin|Add3~101                                        ; |Bcd2bin|Add3~101                                        ; out0             ;
+; |Bcd2bin|Add3~102                                        ; |Bcd2bin|Add3~102                                        ; out0             ;
+; |Bcd2bin|Add3~103                                        ; |Bcd2bin|Add3~103                                        ; out0             ;
+; |Bcd2bin|Add3~104                                        ; |Bcd2bin|Add3~104                                        ; out0             ;
+; |Bcd2bin|Add3~105                                        ; |Bcd2bin|Add3~105                                        ; out0             ;
+; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|_~6           ; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|_~6           ; out0             ;
+; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|romout[0][10] ; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|romout[0][10] ; out0             ;
+; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|romout[0][9]  ; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|romout[0][9]  ; out0             ;
+; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|romout[0][8]  ; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|romout[0][8]  ; out0             ;
+; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|romout[0][5]  ; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|romout[0][5]  ; out0             ;
+; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|romout[0][4]  ; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|romout[0][4]  ; out0             ;
+; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|romout[0][2]  ; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|romout[0][2]  ; out0             ;
+; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|_~14          ; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|_~14          ; out0             ;
+; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|_~17          ; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|_~17          ; out0             ;
+; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|_~21          ; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|_~21          ; out0             ;
+; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|_~24          ; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|_~24          ; out0             ;
+; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|_~27          ; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|_~27          ; out0             ;
+; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|_~29          ; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|_~29          ; out0             ;
+; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|_~33          ; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|_~33          ; out0             ;
+; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|_~36          ; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|_~36          ; out0             ;
+; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|_~39          ; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|_~39          ; out0             ;
+; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|_~41          ; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|_~41          ; out0             ;
+; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|_~44          ; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|_~44          ; out0             ;
+; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|_~46          ; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|_~46          ; out0             ;
+; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|_~48          ; |Bcd2bin|lpm_mult:Mult1|multcore:mult_core|_~48          ; out0             ;
+; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|romout[0][13] ; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|romout[0][13] ; out0             ;
+; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|romout[0][12] ; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|romout[0][12] ; out0             ;
+; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|romout[0][11] ; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|romout[0][11] ; out0             ;
+; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|romout[0][10] ; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|romout[0][10] ; out0             ;
+; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|romout[0][4]  ; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|romout[0][4]  ; out0             ;
+; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|_~10          ; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|_~10          ; out0             ;
+; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|_~14          ; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|_~14          ; out0             ;
+; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|_~17          ; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|_~17          ; out0             ;
+; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|_~21          ; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|_~21          ; out0             ;
+; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|_~24          ; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|_~24          ; out0             ;
+; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|_~27          ; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|_~27          ; out0             ;
+; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|_~29          ; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|_~29          ; out0             ;
+; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|_~33          ; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|_~33          ; out0             ;
+; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|_~36          ; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|_~36          ; out0             ;
+; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|_~39          ; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|_~39          ; out0             ;
+; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|_~41          ; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|_~41          ; out0             ;
+; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|_~44          ; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|_~44          ; out0             ;
+; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|_~46          ; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|_~46          ; out0             ;
+; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|_~48          ; |Bcd2bin|lpm_mult:Mult0|multcore:mult_core|_~48          ; out0             ;
++----------------------------------------------------------+----------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
+    Info: Processing started: Wed Nov 17 03:43:29 2021
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off Bcd2bin -c Bcd2bin
+Info: Using vector source file "E:/Tonie/Desktop/DigitalLab/Calculator/Bcd2bin.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is       5.88 %
+Info: Number of transitions in simulation is 94
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 152 megabytes
+    Info: Processing ended: Wed Nov 17 03:43:29 2021
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

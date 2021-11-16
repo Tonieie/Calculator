@@ -1,0 +1,6 @@
+set tool_name "Custom VHDL"
+set corner_file_list {
+	{{"Slow -8 1.2V 85 Model"} {Mem16x1.vho Mem16x1_8_1200mv_85c_vhd_slow.sdo}}
+	{{"Slow -8 1.2V 0 Model"} {Mem16x1.vho Mem16x1_8_1200mv_0c_vhd_slow.sdo}}
+	{{"Fast -M 1.2V 0 Model"} {Mem16x1.vho Mem16x1_min_1200mv_0c_vhd_fast.sdo}}
+}

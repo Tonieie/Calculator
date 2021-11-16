@@ -1,0 +1,39 @@
+|Bcd2bin
+BCD3[0] => Mult0.IN13
+BCD3[1] => Mult0.IN12
+BCD3[2] => Mult0.IN11
+BCD3[3] => Mult0.IN10
+BCD2[0] => Mult1.IN10
+BCD2[1] => Mult1.IN9
+BCD2[2] => Mult1.IN8
+BCD2[3] => Mult1.IN7
+BCD1[0] => Add2.IN26
+BCD1[0] => Add1.IN8
+BCD1[1] => Add2.IN25
+BCD1[1] => Add1.IN7
+BCD1[2] => Add1.IN5
+BCD1[2] => Add1.IN6
+BCD1[3] => Add1.IN3
+BCD1[3] => Add1.IN4
+BCD0[0] => Add3.IN28
+BCD0[1] => Add3.IN27
+BCD0[2] => Add3.IN26
+BCD0[3] => Add3.IN25
+BinaryOut[0] <= Add3.DB_MAX_OUTPUT_PORT_TYPE
+BinaryOut[1] <= Add3.DB_MAX_OUTPUT_PORT_TYPE
+BinaryOut[2] <= Add3.DB_MAX_OUTPUT_PORT_TYPE
+BinaryOut[3] <= Add3.DB_MAX_OUTPUT_PORT_TYPE
+BinaryOut[4] <= Add3.DB_MAX_OUTPUT_PORT_TYPE
+BinaryOut[5] <= Add3.DB_MAX_OUTPUT_PORT_TYPE
+BinaryOut[6] <= Add3.DB_MAX_OUTPUT_PORT_TYPE
+BinaryOut[7] <= Add3.DB_MAX_OUTPUT_PORT_TYPE
+BinaryOut[8] <= Add3.DB_MAX_OUTPUT_PORT_TYPE
+BinaryOut[9] <= Add3.DB_MAX_OUTPUT_PORT_TYPE
+BinaryOut[10] <= Add3.DB_MAX_OUTPUT_PORT_TYPE
+BinaryOut[11] <= Add3.DB_MAX_OUTPUT_PORT_TYPE
+BinaryOut[12] <= Add3.DB_MAX_OUTPUT_PORT_TYPE
+BinaryOut[13] <= Add3.DB_MAX_OUTPUT_PORT_TYPE
+BinaryOut[14] <= <GND>
+BinaryOut[15] <= <GND>
+
+
